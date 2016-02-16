@@ -1,0 +1,13 @@
+{
+    "type": "level_manifest",
+    "key": "level_manifest",
+    "data": { 
+        "1": {
+            "0, 0": "player",
+            "-2, 1": "goblin"
+        },
+        
+        "2": {} 
+    }
+    
+}
