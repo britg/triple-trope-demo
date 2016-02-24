@@ -61,4 +61,13 @@ public class PlayerController : MonoBehaviour {
         currentCharacterType = CharacterType.Mage;
         currentCharacterController = mageController;
     }
+    
+    void OnTriggerEnter (Collider collider) {
+        if (collider.gameObject.tag.Equals("Enemy")) {
+            var mobController = collider.gameObject.GetComponent<MobController>();
+            if (mobController.alive) {
+                Debug.LogError("#Dead# Collided with an enemy " + collider.gameObject);   
+            }
+        }
+    }
 }
